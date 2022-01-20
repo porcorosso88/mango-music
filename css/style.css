@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+}
+header a{
+  color: white;
+}
+.nav-item a{
+  color: white;
+}
+section.carousel {
+  margin-top: 50px;
+}
+
+header .search-singer{
+  width: 400px;
+}
+.container > .row {
+  margin-top: 50px;
+}
+
+.btn {
+  width: 100px;
+}
+
+.album-info .intro {
+  font-size: 0.8em;
+}
+.album-info a {
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.album-thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.album-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.album-thumbnail  .play-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 35%;
+  left: 45%;
+  cursor: pointer;
+}
+
+.album-thumbnail .play-button:hover {
+  background-color: white;
+}
+
+.album-thumbnail  .pause-button {
+  visibility: hidden;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 35%;
+  left: 45%;
+  cursor: pointer;
+}
+
+.btn-logout{
+  width: 110px;
+}

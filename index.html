@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Mango Music</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.ico" />
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-warning bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MANGO MUSIC</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >홈</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#latest-album-area">앨범</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#latest-album-area">라디오</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sign-up-area">가입</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">로그인</a>
+              </li>
+            </ul>
+            <form action="" class="d-flex searched-singer">
+              <input
+                class="form-control me-2 search-singer"
+                type="search"
+                list="search-singer"
+                placeholder="오늘은 어떤 노래를 들어볼까?"
+                aria-label="Search"
+              />
+
+              <datalist id="search-singer">
+                <option value="박효신"></option>
+                <option value="다비치"></option>
+                <option value="윤종신"></option>
+              </datalist>
+
+              <button class="btn btn-outline-success" type="submit">
+                검색
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <div class="bg-container bg-warning p-2 text-dark bg-opacity-100">
+      <section class="carousel">
+        <div class="container-md">
+          <div class="col">
+            <div
+              id="carouselExampleFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <a href="#박효신">
+                    <img
+                      src="./img/bg-img/wildflower.png"
+                      class="d-block w-100"
+                      alt="야생화"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <a href="#다비치">
+                    <img
+                      src="./img/bg-img/davich.png"
+                      class="d-block w-100"
+                      alt="다비치"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <a href="#윤종신">
+                    <img
+                      src="./img/bg-img/yoon.jpg"
+                      class="d-block w-100"
+                      alt="좋니"
+                    />
+                  </a>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Latest Album Start ##### -->
+    <section class="latest-album-area" id="latest-album-area">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">새로 나온 앨범</h1>
+            <p class="text-center">박효신, 다비치, 윤종신</p>
+          </div>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./img/bg-img/wildflower.png" alt="" />
+                <div class="card-body">
+                  <p class="card-text">박효신 7집 타이틀 곡, 야생화</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./img/bg-img/davich.png" alt="" />
+                <div class="card-body">
+                  <p class="card-text">다비치 데뷔 10주년 앨범 &10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./img/bg-img/yoon.jpg" alt="" />
+                <div class="card-body">
+                  <p class="card-text">2017년 차트 역주행, 좋니</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ##### Latest Album End ##### -->
+
+    <!-- ##### Latest Album Info Start ##### -->
+    <section class="latest-album-detail">
+      <div class="container">
+        <div class="row album-info" id="박효신">
+          <div class="col-4 album-thumbnail">
+            <img
+              class="img-fluid"
+              src="./img/bg-img/wildflower.png"
+              alt="wildflower album-thumbnail"
+            />
+            <img
+              class="play-button"
+              src="./img/bg-img/play-button.png"
+              alt="play-button"
+            />
+            <img
+              class="pause-button"
+              src="./img/bg-img/pause-button.png"
+              alt="play-button"
+            />
+            <p class="intro text-center">
+              전곡을 듣고 싶다면?
+              <a href="./login.html">로그인!</a>
+            </p>
+          </div>
+          <div class="col-8">
+            <h3>오랜 기다림 끝에 박효신이 찾아왔다.</h3>
+            <p>
+              앞서 ‘야생화’, ‘HAPPY TOGETHER’, ‘Shine Your Light’ 등 세 차례
+              발표한 연작 싱글을 통해 뮤지션의 역량을 입증해온 박효신은 6년만에
+              정규 7집 정규 앨범으로 돌아와 다시 한 번 완성형 싱어송라이터로서의
+              모습을 증명한다.
+            </p>
+            <p>
+              박효신이 6년동안 준비한 이번 7집 앨범 ‘I am A Dreamer’는
+              아티스트가 직접 앨범 총괄 프로듀싱을 맡은 것은 물론 수록된 곡
+              대부분을 작사, 작곡해 완성시켜 박효신 만의 깊이 있는 음악적 색채를
+              고스란히 담아냈다. 여기에 콜드 플레이, 존 메이어, 톰 오델, 마크
+              론슨 등 세계적인 뮤지션들의 앨범을 담당한 최고의 믹싱 엔지니어들과
+              아델, 샘 스미스의 앨범을 마스터링한 톰 코인이 앨범 작업에 합세하여
+              앨범의 완성도를 한층 높였다.
+            </p>
+            <p>
+              특히 이번 앨범은 기존 박효신의 음악을 사랑해 온 팬들은 물론이고
+              대중들까지 만족 시킬 수 있는 곡들로 구성 되었다. 누구나 공감 할 수
+              있는 삶에 대한 희망적인 메시지를 담은 가사와 한층 편안해진
+              멜로디의 곡들로 올 가을 우리의 마음을 따뜻하게 물들일 예정이다.
+            </p>
+          </div>
+        </div>
+        <div class="row album-info" id="다비치">
+          <div class="col-8">
+            <h3>DAVICHI '&10'</h3>
+            <h4>믿고 듣는 다비치.</h4>
+            <h4>2018년 1월, 세번째 정규앨범 '&10'으로 돌아온다.</h4>
+            <p>
+              '&10'은 2013년 3월 18일 발표한 정규 2집 ‘MYSTIC BALLAD Part 2’
+              이후 5년여 만에 선보이는 정규앨범으로 타이틀 곡 ‘너 없는 시간들’을
+              비롯, 데뷔 타이틀 ‘미워도 사랑하니까’의 스페셜 리메이크 버전을
+              포함한 총 9곡의 발라드가 수록되어 ‘다비치표 정통 발라드’의
+              진면목을 만나볼 수 있다.
+            </p>
+            <p>
+              이 밖에도 특급 뮤지션 이적이 작사, 작곡한 다비치 멤버들의 10년간의
+              우정을 담아낸 곡 ‘우리 둘’과 2017년 ‘선물’로 역주행 신화를 쓴
+              멜로망스 정동환이 직접 작곡한 ‘아픈 끝’이 수록되어 이번 정규
+              앨범의 완성도를 높였다.
+            </p>
+            <p>
+              다비치로서 보낸 10년의 시간에 대한 감사와 앞으로 계속 될
+              다비치로의 기대의 의미를 담은 다비치의 정규앨범 '&10'은 오는 25일
+              오후 6시 각종 음원사이트를 통해 공개된다.
+            </p>
+          </div>
+          <div class="col-4 album-thumbnail">
+            <img class="img-fluid" src="./img/bg-img/davich.png" alt="다비치" />
+            <img
+              class="play-button"
+              src="./img/bg-img/play-button.png"
+              alt="play-button"
+            />
+            <img
+              class="pause-button"
+              src="./img/bg-img/pause-button.png"
+              alt="play-button"
+            />
+            <p class="intro text-center">
+              전곡을 듣고 싶다면?
+              <a href="./login.html">로그인!</a>
+            </p>
+          </div>
+        </div>
+        <div class="row album-info" id="윤종신">
+          <div class="col-4 album-thumbnail">
+            <img class="img-fluid" src="./img/bg-img/yoon.jpg" alt="좋니" />
+            <img
+              class="play-button"
+              src="./img/bg-img/play-button.png"
+              alt="play-button"
+            />
+            <img
+              class="pause-button"
+              src="./img/bg-img/pause-button.png"
+              alt="play-button"
+            />
+            <p class="intro text-center">
+              전곡을 듣고 싶다면?
+              <a href="./login.html">로그인!</a>
+            </p>
+          </div>
+          <div class="col-8">
+            <h3>LISTEN 010 윤종신 “좋니”</h3>
+            <p>
+              미스틱엔터테인먼트의 음악 플랫폼 LISTEN(리슨)의 열 번째 곡은
+              윤종신의 “좋니”다.
+            </p>
+            <p>
+              “좋니”는 윤종신의 짙은 감수성과 호소력이 담긴 발라드로, 윤종신이
+              작사하고 포스티노가 작곡했다.
+            </p>
+            <p>
+              헤어진 연인의 행복을 빌어주고 싶지만 어쩔 수 없는 그리움에
+              울컥거리는 마음을 가사로 쓴 윤종신은 그 어느 때보다 애절하게
+              노래한다. 담담하지만 힘있게 진행되는 “좋니”는 후반부로 갈수록
+              에너지가 더해져 풍성한 스트링 선율과 함께 극적인 연출을
+              이끌어낸다.
+            </p>
+            <p>
+              90년대 발라더 윤종신의 대체 불가한 표현력과 설득력을 오랜만에 다시
+              느끼게 해 줄 “좋니”. 이별 후 힘들어하는 많은 이들이 이 노래를 듣고
+              공감과 위로를 받기를 바란다.
+            </p>
+            <p>
+              미스틱의 LISTEN은 하림, 윤종신 등 완성형 뮤지션은 물론
+              PERC%NT(퍼센트), 장수빈 등 실력파 신인들의 좋은 음악을 소개하며
+              양질의 음악 플랫폼으로 성장하고 있다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ##### Latest Album Info End ##### -->
+
+    <!-- ##### Sign Up Area Start ##### -->
+    <hr />
+    <section class="sign-up-area" id="sign-up-area">
+      <div class="container">
+        <div class="row">
+          <p>'오늘은 무슨 노래를 들을까?'</p>
+          <p>'내가 좋아하는 가수의 최신 소식을 어디서 봐야하지?'</p>
+          <p>더 이상 고민하지 마세요.</p>
+          <p>망고가 매일 업데이트 해드리겠습니다!</p>
+        </div>
+        <div class="form-row mt-3">
+          <form>
+            <div class="my-3">
+              <label for="exampleInputEmail1" class="form-label">이메일 주소(아이디)</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="이메일 주소 입력"
+              />
+              <div id="emailHelp" class="form-text">
+                개인정보 유출 걱정 NO! 이메일 주소 하나면 충분합니다.
+              </div>
+              <label for="passwordInput" class="form-label mt-3">비밀번호</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordInput"
+                placeholder="비밀번호 입력"
+              />
+              <div class="button-row mt-2">
+                <button
+                  type="submit"
+                  class="btn btn-primary bg-warning border-warning float-end"
+                >
+                  가입
+                </button>
+            </div>
+            
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ##### Sign Up Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer my-5 py-3 bg-light">
+      <div class="card text-left">
+        <div class="card-body">
+          <p class="card-text mt-3">Author: Seho Yu</p>
+          <p class="card-text">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### JS ##### -->
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
